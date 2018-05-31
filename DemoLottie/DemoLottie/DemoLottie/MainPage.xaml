@@ -2,13 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:DemoLottie"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
              x:Class="DemoLottie.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <forms:AnimationView 
+	        x:Name="animationView"
+	        Animation="xamarin_logo_2.json" 
+	        Loop="true" 
+	        AutoPlay="true"	       
+	        HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"/>
     </StackLayout>
 
 </ContentPage>
